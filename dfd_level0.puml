@@ -1,0 +1,13 @@
+@startuml
+actor Doctor
+actor Patient
+database LocalStorage
+
+Doctor -> "Liver Cirrhosis Stage Prediction System": Provide Patient Data
+Patient -> "Liver Cirrhosis Stage Prediction System": Input Personal Details
+
+"Liver Cirrhosis Stage Prediction System" -> LocalStorage: Store Data
+"Liver Cirrhosis Stage Prediction System" -> Doctor: Provide Prediction Result
+"Liver Cirrhosis Stage Prediction System" -> Patient: Show Report
+
+@enduml
